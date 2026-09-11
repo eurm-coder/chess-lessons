@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lesson 1: The Chessboard, Pieces, and Piece Values | Chess with Erfan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 16px;
+      color: #1f2937;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      margin-top: 30px;
+    }
+
+    .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    .objectives {
+      background: #f3f4f6;
+      padding: 14px 18px;
+      border-radius: 8px;
+    }
+
+    .tip {
+      background: #eff6ff;
+      border-left: 4px solid #2563eb;
+      padding: 12px 16px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+
+    .piece-values {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 16px 0;
+    }
+
+    .piece-values th,
+    .piece-values td {
+      border: 1px solid #d1d5db;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .piece-values th {
+      background: #f3f4f6;
+    }
+
+    iframe {
+      width: 100%;
+      height: 520px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+    }
+
+    .quiz-cta {
+      margin-top: 28px;
+      padding: 18px;
+      background: #f7f7f9;
+      border-radius: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 40px;
+      border-top: 1px solid #e5e7eb;
+      padding-top: 16px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Lesson 1: The Chessboard, Pieces, and Piece Values</h1>
+    <p class="meta">Level: Beginner • About 10 minutes • Lesson 1</p>
+  </header>
+
+  <section>
+    <h2>Objectives</h2>
+
+    <div class="objectives">
+      <ul>
+        <li>Identify the eight files, eight ranks, and the coordinates of a chessboard.</li>
+        <li>Understand the relative values of the chess pieces.</li>
+        <li>Use piece values to make better decisions about exchanges.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>The chessboard</h2>
+
+    <p>
+      A chessboard has 64 squares arranged in eight rows and eight columns.
+      The vertical columns are called <strong>files</strong> and are labelled
+      <strong>a</strong> through <strong>h</strong>. The horizontal rows are called
+      <strong>ranks</strong> and are numbered 1 through 8.
+    </p>
+
+    <p>
+      Every square has a coordinate. For example, the white king begins on
+      <strong>e1</strong>, while the black king begins on <strong>e8</strong>.
+      Learning square names will help you read chess notation and follow lessons more easily.
+    </p>
+
+    <div class="tip">
+      <strong>Board setup rule:</strong> When you sit down to play, make sure there is
+      always a light-coloured square in the bottom-right corner.
+    </div>
+  </section>
+
+  <section>
+    <h2>Piece values</h2>
+
+    <p>
+      Chess pieces have approximate values. These are not exact scores, but they are
+      useful for deciding whether an exchange is usually favorable.
+    </p>
+
+    <table class="piece-values">
+      <tr>
+        <th>Piece</th>
+        <th>Approximate value</th>
+      </tr>
+      <tr>
+        <td>Pawn</td>
+        <td>1 point</td>
+      </tr>
+      <tr>
+        <td>Knight</td>
+        <td>3 points</td>
+      </tr>
+      <tr>
+        <td>Bishop</td>
+        <td>3 points</td>
+      </tr>
+      <tr>
+        <td>Rook</td>
+        <td>5 points</td>
+      </tr>
+      <tr>
+        <td>Queen</td>
+        <td>9 points</td>
+      </tr>
+      <tr>
+        <td>King</td>
+        <td>Invaluable — losing the king loses the game.</td>
+      </tr>
+    </table>
+
+    <p>
+      For example, trading a rook worth about 5 points for a knight worth about
+      3 points is usually not a good exchange. However, context matters: a tactical
+      checkmate, a passed pawn, or an attack on the king can be more important than
+      material.
+    </p>
+  </section>
+
+  <section>
+    <h2>Interactive board</h2>
+
+    <p>
+      Use the board below to explore the starting position. Try to find the squares
+      e1, e8, d1, and d8.
+    </p>
+
+    <!-- Replace STUDY_ID once you have made a Lichess Study -->
+    <iframe
+      src="https://lichess.org/study/embed/[STUDY_ID]"
+      frameborder="0"
+      title="Lesson 1 interactive chessboard">
+    </iframe>
+
+    <p>
+      <strong>Try it:</strong> Find the white king, white queen, black king, and black queen.
+      Notice that queens begin on a square matching their colour: the white queen on d1
+      and the black queen on d8.
+    </p>
+  </section>
+
+  <section class="quiz-cta">
+    <h2>Quick quiz</h2>
+    <p>Test what you learned with five short questions.</p>
+
+    <!-- Replace QUIZ_URL with your Tally form link -->
+    <a
+      class="btn"
+      href="[QUIZ_URL]"
+      target="_blank"
+      rel="noopener">
+      Start Lesson 1 Quiz
+    </a>
+  </section>
+
+  <footer>
+    <p>
+      <a href="../index.html">← All lessons</a> •
+      <a href="../about.html">About</a> •
+      <a href="../contact.html">Contact & Feedback</a>
+    </p>
+  </footer>
+</body>
+</html>
